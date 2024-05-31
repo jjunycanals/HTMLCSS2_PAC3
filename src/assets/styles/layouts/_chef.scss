@@ -1,0 +1,95 @@
+.chef-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 30px 15px;
+}
+.content{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+.chef-img {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  transition: .2s;
+}
+.chef img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.chef{
+  min-width: 220px;
+  text-align: right;
+  border-radius: 20px;
+  transition: .2s;
+}
+/* Desplaçar superiorment el content de cada Cheff quan es passa per sobre */
+.chef:hover{
+  box-shadow: 0 1px 14px 2px rgba(0,0,0,0.15);
+  transform: translateY(-4px);
+}
+/* Donar estils a la imatge de cada Cheff */
+.chef-header {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  cursor: pointer;
+}
+/* Per fer zoom a la imatge */
+.chef:hover .chef-img {
+  transform: scale(1.1);
+}
+/* Donem cos al body de cada Cheff */
+.chef-body{
+  padding: 4%;
+  text-align: center;
+}
+.chef-body span {
+  display: inline-block;
+  margin-bottom: 2%;
+  color: gray;
+}
+.chef-body h2 {
+  margin-bottom: 10%;
+  line-height: 1.5;
+}
+
+/* Fem alguns elements responsius després de crear el grid */
+@media (max-width: 1400px) {
+  .uoc-spa{
+    width: 100%;
+    margin: 1% auto;
+  }
+  .chef img {
+    height: auto;
+  }
+}
+
+/* Fem alguns elements responsius després de crear el grid */
+@media (max-width: 840px) {
+  .content {
+    grid-template-columns: repeat(2, 1fr)
+  }
+  .chef img {
+    height: auto;
+  }
+}
+/* En pantalles petites de movil fer 1 sola columna */
+@media (max-width: 600px) {
+  .content {
+    grid-template-columns: repeat(1, 1fr)
+  }
+  .chef img {
+    height: auto;
+  }
+}

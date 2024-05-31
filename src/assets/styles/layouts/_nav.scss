@@ -1,0 +1,85 @@
+/* PERSONALITZACIONS NAV */
+.nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  color: var(--secondary-color) !important;
+
+}
+.bg-custom {
+  background-color: var(--primary-color);
+}
+.nav ul {
+  position: sticky;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  list-style-type: none;
+  background-color: var(--third-color);
+}
+.nav li {
+  float: left;
+}
+.nav li a {
+  display: block;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+.nav ul li:first-child{
+  padding-left: 3%;
+}
+/*  Per canviar el color del link quan passem per sobre */
+.nav li a:hover {
+  background-color: var(--secondary-color);
+}
+/* Per saber on som de la pagina i quedi en el nav reflexat*/
+.nav .nav-link.active {
+  background-color: var(--third-color);
+}
+.title-header {
+  width: 100%;
+  font-size: 3.2rem;
+  letter-spacing: 20px;
+}
+.title-header a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+
+/* Add logo in NAV */
+.div-cercle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+.cercle {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 40%;
+  height: 30%;
+  border: 2px solid var(--secondary-color);
+  border-radius: 50%;
+}
+
+.cercle i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 16px;
+  color: var(--secondary-color);
+  transform: translate(-50%, -50%);
+}
+
+.text-logo {
+  margin: 25% 0%;
+  font-weight: 900;
+  color: var(--secondary-color);
+  transform: translate(120%, -10%);
+}
