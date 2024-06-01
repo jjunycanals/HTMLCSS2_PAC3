@@ -13,71 +13,77 @@ ul {
   list-style-type: disc;
 }
 
+.carousel {
+  position: relative;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 .about {
-  padding: 0% 20%;
-  margin: 2% 5%;
-  text-align: justify;
+  @apply mx-auto my-4 p-4 text-justify;
 }
 
 .accordion-custom {
-  padding: 0% 5%;
-  margin: 1% 10%;
+  @apply mx-auto my-4 p-4;
 }
 
 .title-accordion {
-  margin-bottom: 0;
-  font-weight: 700;
-  color: var(--secondary-color);
+  @apply border border-secondary-color rounded-lg mt-3;
 }
 
-/* Estil per a blocs de cita dins dels articles */
-/* Faig servir les pseudoclasses :has i :where per la cita en l'article */
+.title-accordion:hover {
+  @apply bg-secondary-color;
+}
+
+article :is(h2, p) {
+  @apply mb-4;
+}
+
 article:where(:has(blockquote)) blockquote {
-  padding-left: 5%; /* Espaiat interior per a destacar el contingut */
-  margin-right: 5%;
-  margin-left: 5%;
-  border-left: 5px solid $uoc-masterbrand; /* Marc lateral */
-}
-
-article blockquote {
-  font-style: italic;
-  color: var(--third-color);
+  @apply pl-4 border-l-4 italic text-gray-600;
 }
 
 article blockquote footer {
-  text-align: right;
-}
-
-/* Estils entre h2 i p*/
-article :is(h2,p) {
-  margin-bottom: 3%; /* Espaiat inferior entre títols i pàrrafs */
-}
-
-.carousel {
- margin: 2% 5%;
+  @apply text-right;
 }
 
 @media (max-width: 1050px) {
   .about {
-    padding: 0% 8%;
-    margin: 2% 2%;
+    @apply px-8 mx-2 my-2;
   }
 
   .accordion-custom {
-    padding: 0% 2%;
-    margin: 1% 5%;
+    @apply px-2 mx-5 my-1;
   }
-
 }
 
 @media (max-width: 450px) {
   .about {
-    padding: 0% 8%;
-    margin: 2% 2%;
+    @apply px-8 mx-2 my-2;
   }
 
   .accordion-custom {
-    padding: 0% 2%;
-    margin: 1% 5%;
+    @apply px-2 mx-5 my-1;
   }
 }
+

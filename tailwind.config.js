@@ -19,6 +19,9 @@ module.exports = {
       },
       translate: {
         '4px': '4px',
+        '5px': '5px',
+        '10px': '10px',
+        '10px-10px': '10px, 10px',
       },
     },
   },
