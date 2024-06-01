@@ -17,6 +17,9 @@ module.exports = {
         'background': '#E4F1FD',
         'background-2': '#FFFFFF',
       },
+      translate: {
+        '4px': '4px',
+      },
     },
   },
   plugins: [],
