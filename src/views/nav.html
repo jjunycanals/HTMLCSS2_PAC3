@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-custom">
+<!-- <nav class="navbar navbar-expand-lg bg-custom">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
             <div class="div-cercle">
@@ -27,5 +27,31 @@
         </div>
     </div>
 
-</nav>
+</nav> -->
 
+<nav class="navbar-custom py-4 px-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="index.html" class="flex items-center text-decoration-none">
+            <div class="h-12 w-12 border-2 border-black rounded-full flex items-center justify-center">
+                <i class="fas fa-c text-black"></i>
+            </div>
+            <div class="ml-2 text-black font-bold">Cooking contest 2024 edition</div>
+        </a>
+        <div x-data="{ open: false }" class="flex items-center">
+            <button @click="open = !open" class="block lg:hidden focus:outline-none" type="button" aria-label="Toggle navigation">
+                <svg class="h-6 w-6 fill-current text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path x-show="!open" d="M4 6h16M4 12h16m-7 6h7" />
+                    <path x-show="open" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <ul :class="{ 'hidden': !open }" class="lg:flex lg:space-x-4 text-white list-none">
+                <li><a href="index.html" class="link-hover-black text-decoration-none active">Home</a></li>
+                <li><a href="chefs.html" class="link-hover-black text-decoration-none">Chefs</a></li>
+                <li><a href="about.html" class="link-hover-black text-decoration-none">About Competition</a></li>
+                <li><a href="contact.html" class="link-hover-black text-decoration-none">Contact</a></li>
+                <li><a href="contestants.html" class="link-hover-black text-decoration-none">Contestants</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>

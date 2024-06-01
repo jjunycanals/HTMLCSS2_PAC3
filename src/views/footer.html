@@ -2,9 +2,9 @@
     <div class="anell">
         <div class="cercle-interior"><i class="fa-solid fa-c"></i></div>
     </div>
-    <div class="logo-text">LOGO</div>
+    <div class="logo-text">Cooking contest 2024 edition</div>
     <div class="pages">
-        <ul class="nav justify-content-center">
+        <!-- <ul class="nav justify-content-center">
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
@@ -17,6 +17,16 @@
             <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
             </li>
+            <li>
+                <a class="nav-link" href="contestants.html">Contestants</a>
+            </li>
+        </ul> -->
+        <ul :class="{ 'hidden': !open }" class="lg:flex lg:space-x-4 text-white list-none justify-content-center">
+            <li><a href="index.html" class="link-hover-black text-decoration-none active">Home</a></li>
+            <li><a href="chefs.html" class="link-hover-black text-decoration-none">Chefs</a></li>
+            <li><a href="about.html" class="link-hover-black text-decoration-none">About Competition</a></li>
+            <li><a href="contact.html" class="link-hover-black text-decoration-none">Contact</a></li>
+            <li><a href="contestants.html" class="link-hover-black text-decoration-none">Contestants</a></li>
         </ul>
     </div>
     <div class="social">

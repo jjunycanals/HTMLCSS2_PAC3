@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contestants</title>
+
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script type="module" src="./assets/scripts/nav.js" defer></script>
+</head>
+<body>
+    <include src="./views/nav.html"></include>
+    <main class="container mx-auto mt-8 p-4 m-5">
+        <section class="w-full min-h-50 flex flex-col items-center text-center m-10">
+            <h1 class="text-4xl font-bold mb-4">Contestants</h1>
+            <h3 class="text-lg mb-8">This section describes the recipes of the best contestants</h3>
+        </section>
+        <section class="flex justify-center">
+            <img src="./assets/images/cover.png" alt="es veuen uns plats d'un apat i gent menjant servint-se menjar als plats" title="imatge d'uns plats amb gent menjant" class="max-w-full h-auto">
+        </section>
+        <section class="mt-20">
+            <h1 class="text-4xl font-bold mb-4">The recipes</h1>
+            <p class="mb-8">This section describes the recipes of the best contestants</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h2 class="text-2xl font-bold mb-2">Cajun seafood pasta</h2>
+                    <div class="flex items-center mb-4">
+                        <img src="./assets/images/avatar.png" alt="Cajun seafood pasta" class="w-16 h-16 object-cover rounded-full mr-4">
+                        <div>
+                            <p class="text-gray-600">John Cooper</p>
+                            <p>This Cajun seafood pasta recipe is a hot one, but delicious!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h2 class="text-2xl font-bold mb-2">Cedar planked salmon</h2>
+                    <div class="flex items-center mb-4">
+                        <img src="./assets/images/avatar.png" alt="Cedar planked salmon" class="w-16 h-16 object-cover rounded-full mr-4">
+                        <div>
+                            <p class="text-gray-600">Marta Alonso</p>
+                            <p>Salmon reaches its full potential when it's grilled on top of a cedar plank.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h2 class="text-2xl font-bold mb-2">Poulet au vinaigre</h2>
+                    <div class="flex items-center mb-4">
+                        <img src="./assets/images/avatar.png" alt="Poulet au vinaigre" class="w-16 h-16 object-cover rounded-full mr-4">
+                        <div>
+                            <p class="text-gray-600">Mary Ann Stones</p>
+                            <p>Irresistible chicken, cooked with vinegar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <include src="./views/footer.html"></include>
+</body>
+</html>

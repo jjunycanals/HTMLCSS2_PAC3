@@ -7,7 +7,7 @@ function getCurrentPageName() {
   return currentPage;
 }
 
-var navLinks = document.querySelectorAll('.nav-link'); // agafem tots els .nav-link que hi ha
+var navLinks = document.querySelectorAll('.link-hover-black'); // agafem tots els .nav-link que hi ha
 
 // Recorrem navLinks per veure on tenim l'element active i substituir-lo
 navLinks.forEach(function(link) {
