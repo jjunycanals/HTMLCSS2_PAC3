@@ -7,8 +7,9 @@
     "parcel:serve": "parcel src/index.html -p 8123 --target web --open",
     "parcel:build": "parcel build src/index.html --target web --no-source-maps --no-cache",
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
-    "dev": "npm-run-all clean parcel:serve",
-    "build": "npm-run-all clean parcel:build",
+    "dev": "npm-run-all clean build:css parcel:serve",
+    "build": "npm-run-all clean build:css parcel:build",
+    "build:css": "sass src/assets/styles/main.scss | postcss -o dist/main.css",
     "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
   },
   "web": "dist/index.html",
@@ -35,15 +36,19 @@
   },
   "homepage": "https://github.com/uoc-advanced-html-css/uoc-boilerplate#readme",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.11.0",
-    "autoprefixer": "^10.4.15",
+    "@parcel/transformer-sass": "^2.12.0",
+    "autoprefixer": "^10.4.19",
     "npm-run-all": "^4.1.5",
-    "parcel": "^2.11.0",
+    "parcel": "^2.12.0",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
     "postcss-preset-env": "^9.1.1",
     "posthtml-doctype": "^1.1.1",
     "posthtml-include": "^1.7.4",
-    "rimraf": "^5.0.1",
-    "sharp": "^0.31.1"
+    "rimraf": "^5.0.7",
+    "sass": "^1.77.4",
+    "sharp": "^0.33.4",
+    "tailwindcss": "^3.4.3"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.2"

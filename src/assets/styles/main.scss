@@ -5,7 +5,8 @@
 /**
  * Import variables
  */
-
+@tailwind base;
+@tailwind components;
 @import "variables";
 @import "colors";
 
@@ -31,6 +32,12 @@
 @import "layouts/contact";
 @import "layouts/thanks";
 @import "layouts/footer";
+
+/**
+ * Import directives
+ * It's a best practice to use a different partial for each page
+ */
+@tailwind utilities;
 
 /**
  * Do NOT include anything else in this file!
