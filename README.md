@@ -1,3 +1,22 @@
+# PAC 3
+
+## Recomposició amb Tailwind
+S'han recreat dues de les pàgines que vas desenvolupar a la PAC 2 que són:
+1. contact.html
+2. about.html
+
+## Afegir disseny Figma
+S'ha creat la nova pàgina contestants.html feta sota el paradigma de l’Atomic CSS i fent servir la llibreria d’utilitats Tailwind.
+
+## Ús de @apply i <include>
+
+S'ha fet ús de @apply a contact.html per input i label del formulari.
+S'ha fet ús de @apply a la part del acordeon i també a la part de la galeria de fotos.
+
+S'ha fet ús de <include> per la galeria de fotos de about.html
+S'ha fet ús de <include> per implementar el nou footer2.html per el disseny figma.
+
+
 # UOC Boilerplate
 
 UOC Boilerplate is a starter template for the HTML and CSS Tools courses from the [Master's Program in Multimedia Applications](https://estudis.uoc.edu/ca/masters-universitaris/aplicacions-multimedia/presentacio) and the [Master's Program in Web App and Website Development](https://estudis.uoc.edu/ca/masters-universitaris/desenvolupament-llocs-aplicacions-web/presentacio) at the [Universitat Oberta de Catalunya](https://www.uoc.edu). It aims to provide a basic, modern frontend web development starter pack based on Parcel and including a Sass compiler, an ES6 transpiler, minifiers, an image transformer, and development tools.
